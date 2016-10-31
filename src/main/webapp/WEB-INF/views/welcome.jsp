@@ -13,21 +13,22 @@
   <meta name="author" content="">
 
   <title>Welcome</title>
+  <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
 
-  <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body >
 
 <div align="center">
   <form id="logoutForm" method="post" action="${contextPath}/logout">
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
   </form>
-  <h2>Welcome ${pageContext.request.userPrincipal.name} | <a onclick="document.forms['logoutForm'].submit()">Logout</a>
+  <h2>Welcome ${pageContext.request.userPrincipal.name} | <a  onclick="document.forms['logoutForm'].submit()">Logout</a>
   </h2>
   <!--показать уже загруженную фотку по id -->
   <form action="/view" method="POST">
     Photo id: <input type="text" name="photo_id">
-    <input type="submit" />
+   <!-- <input value="Send" type="submit"/> -->
+    <button type="submit" class="button3">Send</button>
   </form>
   <!--загрузить новую фотку -->
   <form action="/add_photo" enctype="multipart/form-data" method="POST">
@@ -35,10 +36,10 @@
 <span id="table">
     <table border=0 cellspacing=0 cellpadding=3>
       <tr>
-        <th><a href="#" onclick="return addline();">add more</a></th>
+        <th><a href="#" class="button1" onclick="return addline();">add more</a></th>
       </tr>
-      <tr id="newline" nomer="[0]">
-        <td>Photo: <input type="file" name="photo">
+      <tr id="newline" href="#" class="button2" nomer="[0]">
+        <td>Photo:<input value="Choose file" type="file" name="photo">
         </td>
       </tr>
     </table>
@@ -62,10 +63,12 @@
       }
     </script>
 
-    <input type="submit" />
+ <!--   <input value="Send" type="submit" /> -->
+    <button type="submit" class="button3">Send</button>
   </form>
 
-  <input type="submit" value="Show all photos" onclick="window.location='/view_all';" />
+ <!-- <input type="submit" value="Show all photos" class="button3" onclick="window.location='/view_all';" />  -->
+  <button type="submit" class="button3" onclick="window.location='/view_all';">Show all photos</button>
 </div>
 </body>
 </html>

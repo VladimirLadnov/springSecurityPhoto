@@ -26,7 +26,6 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 /**
- * Controller for {@link com.vel.springsecurityapp.model.User}'s pages.
  *
  * @author Wladimir
  * @version 1.0
@@ -40,7 +39,6 @@ public class UserController {
 
 
     @RequestMapping(value = "/view", method = RequestMethod.POST)
-
     public ResponseEntity<byte[]> onView(@RequestParam("photo_id") long id) {
         return photoById(id);
     }
@@ -55,7 +53,6 @@ public class UserController {
 
 
     @RequestMapping(value = "/add_photo", method = RequestMethod.POST)
-
     public String onAddPhoto(Model model, @RequestParam("photo") MultipartFile[] photosArr) {
         System.out.println(photosArr);
         System.out.println(photosArr.length);
