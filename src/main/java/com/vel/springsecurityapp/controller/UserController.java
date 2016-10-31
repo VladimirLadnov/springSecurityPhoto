@@ -77,7 +77,7 @@ public class UserController {
             throw new PhotoErrorException();
         }
         model.addAttribute("id_set", id_set);
-        return "result";
+        return "view_all";
     }
 
 
