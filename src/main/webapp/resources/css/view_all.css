@@ -1,0 +1,23 @@
+body{
+    background-image: url('/resources/img/MTI5MDI0MDQ0NzAyOTUzNDQy.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+
+a.button1, button.button1 ,#butt{
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    background-position: left;
+}
+a.button1:hover,button.button1:hover, #butt:hover { background: rgba(255,255,255,.2); }
+a.button1:active, button.button1:active, #butt:hover { background: white; }
