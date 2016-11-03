@@ -28,4 +28,39 @@ a.button1, button.button1 ,#butt{
     background-position: left;
 }
 a.button1:hover,button.button1:hover, #butt:hover { background: rgba(255,255,255,.2); }
-a.button1:active, button.button1:active, #butt:hover { background: white; }
+a.button1:active, button.button1:active, #butt:active { background: white; }
+
+#check{
+    float: right;
+}
+
+#topH.top {
+    background: url(/resources/img/background.png) #000000;
+    border: 2px solid #229CFF;
+    display: block;
+    font-family: tahoma;
+    font-size: 12px;
+    line-height: 10px;
+    padding: 10px;
+    position: fixed;
+    left: -2px;
+    text-align: right;
+    top: 10px;
+    z-index: 1000;
+    border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px 0 0 6px;
+    animation-name: back;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    -moz-animation-name: back;
+    -moz-animation-delay: 0s;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -webkit-animation-name: back;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+}
+

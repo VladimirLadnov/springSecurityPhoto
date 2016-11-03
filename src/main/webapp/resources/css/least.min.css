@@ -14,7 +14,9 @@ section #fullPreview .fullCaption{max-width:960px;width:100%;
 section #fullPreview .fullCaption{font-family:Helvetica,Arial,sans-serif;
     font-size:13px;line-height:15px;font-weight:300;color:#fff;margin:15px auto 0 auto}
 section #fullPreview figure{background-image:url("../img/effects/close.png");background-size:100%;width:30px;height:30px;
-    position:absolute;top:10px;right:20px;cursor:pointer}section li{display:inline-block;vertical-align:top;position:relative}
+    position:absolute;top:40px;right:50px;cursor:pointer}
+section li{display:inline-block;vertical-align:top;
+    position:relative;  }
 section li:hover .overLayer{-webkit-transition:opacity 0.3s linear;
     -moz-transition:opacity 0.3s linear;-ms-transition:opacity 0.3s linear;-o-transition:opacity 0.3s linear;
     transition:opacity 0.3s linear;opacity:0.6;display:block;background:gray}
