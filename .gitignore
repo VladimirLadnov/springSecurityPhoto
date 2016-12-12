@@ -1,4 +1,6 @@
-.idea/
+.idea/artifacts
+.idea/.name
+.idea/libraries
 src/main/resources
 .idea/workspace.xml
 src/main/webapp/WEB-INF/image/
