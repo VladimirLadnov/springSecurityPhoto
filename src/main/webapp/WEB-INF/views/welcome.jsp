@@ -24,13 +24,13 @@
   </form>
   <h2>Welcome ${pageContext.request.userPrincipal.name} | <a  onclick="document.forms['logoutForm'].submit()">Logout</a>
   </h2>
-  <!--показать уже загруженную фотку по id -->
+
   <form action="/view" method="POST">
     Photo id: <input type="text" name="photo_id">
-   <!-- <input value="Send" type="submit"/> -->
+
     <button type="submit" class="button3">Send</button>
   </form>
-  <!--загрузить новую фотку -->
+
   <form action="/add_photo" enctype="multipart/form-data" method="POST">
 
 <span id="table">
@@ -63,11 +63,9 @@
       }
     </script>
 
- <!--   <input value="Send" type="submit" /> -->
     <button type="submit" class="button3">Send</button>
   </form>
 
- <!-- <input type="submit" value="Show all photos" class="button3" onclick="window.location='/view_all';" />  -->
   <button type="submit" class="button3" onclick="window.location='/view_all';">Show all photos</button>
 </div>
 </body>
