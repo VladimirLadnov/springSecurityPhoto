@@ -1,0 +1,14 @@
+.idea/
+src/main/resources
+.idea/workspace.xml
+src/main/webapp/WEB-INF/image/
+src/main/webapp/resources/css/base.css
+src/main/webapp/resources/css/buttons.css
+src/main/webapp/resources/css/normalize.css
+src/main/webapp/resources/css/vicons-font.css
+src/main/webapp/resources/fonts/
+src/main/webapp/resources/img/background.png
+src/main/webapp/resources/img/effects/
+src/main/webapp/resources/img/related/
+src/main/webapp/resources/js/jquery.lazyload.js
+target/
